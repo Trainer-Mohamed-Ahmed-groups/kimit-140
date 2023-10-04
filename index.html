@@ -5,57 +5,139 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>First session</title>
+    <style>
+        body {
+            height: 5000px;
+        }
+    </style>
 </head>
 
 <body>
-    <!-- <p>This <span>is a</span> paragraph</p>
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi sunt, vel sapiente nesciunt illum quibusdam iure id, adipisci a quos libero perferendis provident beatae, quas atque! Itaque repudiandae quisquam officia.</p>
-    <p>This is a paragraph</p>
+    <table border="">
+        <caption>All about employees</caption>
+        <tr>
+            <th>Name</th>
+            <th colspan="2">Info</th>
+        </tr>
+        <tr>
+            <td>Ali</td>
+            <td rowspan="3">22</td>
+            <td>Graduated</td>
+        </tr>
+        <tr>
+            <td>Mahmoud</td>
+            <td rowspan="2">Student</td>
+        </tr>
+        <tr>
+            <td>Alyaa</td>
+        </tr>
+        <tr>
+            <td>Eman</td>
+            <td>23</td>
+            <td>Graduated</td>
+        </tr>
+    </table>
 
-    <span>This is span</span>
-    <span>This is span</span>
-    <span>This is span</span>
-
-
-    <div>This is a division</div>
-
-    <h1>This is H1</h1>
-    <h2>This is H2</h2>
-    <h3>This is h3</h3>
-    <h4>This is H4</h4>
-    <h5>This is H5</h5>
-    <h6>This is H6</h6>
-    <h7>This is custom</h7> -->
-
-    <img src="./images/nature.avif" width="400" alt="This is an image">
-
-    <p>This is P</p>
-    <blockquote>This is quotation</blockquote>
-
-    <a href="https://google.com">Click here</a>
+    <button>Ok</button>
 
     <hr>
-    <b>This is bold</b>
-    <strong>This is bold</strong>
-    <br>
-    <i>This is italic</i>
-    <em>This is italic</em>
-    <br>
-    <mark>This is marked</mark>
-    <br>
-    <ins>This is underline</ins>
-    <br>
-    <del>This is deleted</del>
-    <s>This is deleted</s>
-    <br>
-    <span>25 <sup>5</sup></span>
-    <br>
-    <span>25 <sub>5</sub></span>
-    <br>
-    <small>This is small text</small>
+    <code>This is code</code>
+    <kbd>This is code</kbd>
+    <samp>This is code</samp>
+
     <br><br>
 
-    <mark><ins><i>This is test</i></ins></mark>
+    <pre>This                is                   span</pre>
+    <var>This is var</var>
+
+    <hr>
+    <a href="https://www.google.com" target="_blank">Click here</a> <br>
+    <a href="tel:123456789">Call us</a> <br>
+    <a href="http://wa.me/123456">Send message to whatsapp</a> <br>
+    <a href="mailto:abc@kimit.com">Send email</a><br>
+    <a href="sms:123456789">Send SMS</a><br>
+    <a href="./images/nature.avif" download>Download</a>
+
+    <hr>
+    <article>This is article</article>
+    <aside>This is aside</aside>
+    <header>This is header</header>
+    <nav>This is nav</nav>
+    <footer>This is footer</footer>
+    <section>This is section</section>
+
+
+    <details>
+        <summary>This is summery</summary>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem omnis totam accusamus at! Unde beatae
+            dicta dignissimos error quod ducimus soluta mollitia quidem placeat! Sunt odio distinctio natus totam sint?
+            Reprehenderit perferendis aspernatur minima earum, voluptatibus inventore in enim nulla dolorem sed
+            doloribus quod eaque aut? Aperiam delectus sapiente, aliquid, vel a veniam quia ipsum voluptatibus ullam
+            dolore hic fuga.</p>
+    </details>
+
+    <figcaption>
+        <img src="./images/nature.avif" width="300" alt="This is nature">
+        <figcaption>This is caption</figcaption>
+    </figcaption>
+
+    <ol>
+        <li>First Item</li>
+        <li>Second Item</li>
+    </ol>
+
+    <ul>
+        <li>First Item</li>
+        <li>Second Item</li>
+    </ul>
+
+    <form action="./thanks.html" method="GET">
+        <label for="fname">First name:</label><br>
+        <input type="text" name="fname" id="fname" courses><br>
+        <label for="userPassword">Password</label> <br>
+        <input type="password" id="" name="userPassword"><br><br>
+        <textarea name="" id="" cols="50" rows="10"></textarea><br><br>
+        <select name="courses" id="">
+            <option value="html">HTML</option>
+            <option value="css">CSS</option>
+        </select><br><br>
+        <input type="color" name="" id=""><br><br>
+        <input type="time" name="" id=""><br><br>
+        <input type="date" name="" id=""><br><br>
+        <input type="datetime-local" name="" id=""><br><br>
+        <input type="week" name="" id=""><br><br>
+        <input type="month" name="" id=""><br><br>
+        <input type="number" name="" id=""><br><br>
+        <input type="url" name="" id=""><br><br>
+        <input type="range" name="" id=""><br><br>
+        <input type="search" name="" id=""><br><br>
+        <input type="email" name="" id=""><br><br>
+        <input type="file" name="" id=""><br><br>
+        <input type="hidden" name="numOfUsers" value="50"><br><br>
+        <input type="image" src="./images/nature.avif" alt="This is nature" width="70"><br><br>
+        <input type="radio" name="gender" id="male" value="male">
+        <label for="male">Male</label>
+        <input type="radio" name="gender" id="female" value="female">
+        <label for="female">Female</label>
+
+
+
+        <br><br>
+
+        <input type="checkbox" name="courses" id="html" value="html">
+        <label for="html">HTML</label>
+        <input type="checkbox" name="courses" id="css" value="css">
+        <label for="css">CSS</label>
+
+
+
+        <br><br>
+        <input type="button" value="Ok">
+        <input type="reset" value="Reset">
+        <input type="submit" value="Submit">
+    </form>
+
+
 </body>
 
 </html>
