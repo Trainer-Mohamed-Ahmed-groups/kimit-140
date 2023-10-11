@@ -1,19 +1,5 @@
-.testClass {
-    color: blue
+.test {
+    height: 50vh;
+    width: 50vw;
+    background-color: #e4e4e4;
 }
-
-#testId {
-    color: green
-}
-
-div {
-    color: red
-}
-
-
-/*
-1- camel case => employeeEmail
-2- snake case => employee_email
-3- kebab case => employee-email
-4- pascal case => EmployeeEmail
-*/
