@@ -1,79 +1,47 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
-
-:root {
-    font-size: 13px;
-    --kimit-color: #38c815
+* {
+    /* Box sizing */
+    box-sizing: border-box;
 }
 
 body {
-    height: 5000px;
-    font-family: 'Raleway', sans-serif;
+    height: 2000px;
 }
 
-/* * {
-    color: #F00
+/* Rounded corners */
+.rounded {
+    height: 200px;
+    width: 200px;
+    background-color: #EEE;
+    border-radius: 50%;
+    /* -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px; */
+}
+
+/* Margin and padding */
+
+.spacing_explain {
+    height: 200px;
+    width: 200px;
+    background-color: #4e4e4e;
+    color: #FFF;
+    /* margin-left: 40px; */
+    margin-inline-start: 40px;
+    padding: 40px;
+    border: 2px solid #F00;
+}
+
+/* .parent .child {
+    border: 2px solid red;
+    margin: 10px;
+    font-weight: bold;
+    font-size: 2rem;
 } */
 
-nav {
-    height: 70px;
-    color: var(--kimit-color);
-    background-color: #EEE;
-}
-
-.intro {
-    background-color: #4e4e4e;
-    height: calc(100vh - 70px);
-}
-
-.size {
-    color: var(--kimit-color);
-    font-size: 6rem;
-}
-
-.boldText {
-    font-weight: 800;
-    font-size: 3rem;
-}
-
-section,
-.test {
-    font-weight: 800;
-}
-
-.test {
-    max-height: 150px;
-    background-color: #888;
-}
-
-.bg_explain {
-    height: 400px;
-    /* width: 800px; */
-    background-color: var(--kimit-color);
-    color: #FFF;
-    font-size: 3rem;
-    background-image: url(../images/lg.jpg);
-    background-repeat: no-repeat;
-    background-position: 20% 30%;
-    background-size: cover;
-    background-attachment: fixed;
-    /* background:url(../images/lg.jpg) center no-repeat */
-}
-
-.linear {
-    height: 300px;
-    width: 300px;
-    background-image: linear-gradient(45deg, rgb(61 61 61 / 48%), rgb(128 126 126 / 58%) 40%), url(../images/lg.jpg);
-        /* background: repeating-linear-gradient(#F00, #00F 50%) */
-        /* background: repeating-radial-gradient(#b5b5b5, #3c3c3c 50%) */
-        /* background: conic-gradient(#b5b5b5, #3c3c3c) */
-}
-
-.border_explain {
-    height: 100px;
-    width: 100px;
-    background-color: #CCC;
-    /* border-style: solid dotted;
-    border-width: 10px 20px 7px 9px;
-    border-color: #00F #0FF #F00 transparent; */
-    border: 3px solid #00F
+.now ~ .child {
+    border: 2px solid red;
+    margin: 10px;
+    font-weight: bold;
+    font-size: 2rem;
 }

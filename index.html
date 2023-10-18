@@ -5,30 +5,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="the page description" />
+    <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/style.css">
     <title>CSS course</title>
 
 </head>
 
 <body>
-    <nav>I am nav</nav>
-    <section class="intro">I am Intro</section>
-    <hr>
-    <span class="size">I am normal
-        <span class="boldText">I am bold</span>
-    </span>
-
-    <hr>
-    <div class="test">I am for test</div>
-    <hr>
-    <div class="bg_explain">I am background explain</div>
+    <nav>
+        <ul>
+            <li><a href="index-ar.html">عربى</a></li>
+        </ul>
+    </nav>
+    <!-- <div class="rounded"></div> -->
 
 
-    <div class="linear"></div>
-    
-    <hr>
+    <div class="spacing_explain">This is for margin and padding</div>
 
-    <div class="border_explain"></div>
+    <div class="parent">
+        <div class="child">1</div>
+        <div class="child">2
+            <div class="test">This is test
+                <div class="child">This is child in test</div>
+            </div>
+        </div>
+        <div class="now">This is now</div>
+        <div class="child">3</div>
+        <div class="child">4</div>
+        <div class="child">5</div>
+        <div class="child">6</div>
+    </div>
+
+    <div class="child">This is outside</div>
 </body>
 
 </html>
