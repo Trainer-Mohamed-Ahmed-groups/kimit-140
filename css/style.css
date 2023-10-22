@@ -1,47 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+    scroll-behavior: smooth;
+}
+
+body {
+    height: 5000px;
+}
+
 * {
     /* Box sizing */
     box-sizing: border-box;
 }
 
-body {
-    height: 2000px;
+form {
+    width: 50%;
+    margin: 40px auto;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
 }
 
-/* Rounded corners */
-.rounded {
-    height: 200px;
-    width: 200px;
-    background-color: #EEE;
-    border-radius: 50%;
-    /* -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
-    -o-border-radius: 5px; */
+fieldset {
+    border-radius: 15px;
 }
 
-/* Margin and padding */
+form fieldset legend {
+    font-weight: 700;
+    padding: 0 10px;
+}
 
-.spacing_explain {
-    height: 200px;
-    width: 200px;
-    background-color: #4e4e4e;
+form fieldset .userInput {
+    /* border-top: 0;
+    border-left: 0;
+    border-right: 0;*/
+
+
+    border: none;
+    border-bottom: solid #4e4e4e;
+    color: #343434;
+}
+
+form fieldset .userInput,
+form fieldset textarea {
+    outline: none;
+}
+
+form fieldset .submitBtn {
+    width: 120px;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
     color: #FFF;
-    /* margin-left: 40px; */
-    margin-inline-start: 40px;
-    padding: 40px;
-    border: 2px solid #F00;
+    font-weight: 800;
+    background: #4e4e4e;
+    cursor: pointer;
 }
 
-/* .parent .child {
-    border: 2px solid red;
-    margin: 10px;
+.parent :not(.baby:first-of-type) {
+    border: 2px solid #00F;
     font-weight: bold;
     font-size: 2rem;
-} */
+    margin: 10px;
+}
 
-.now ~ .child {
-    border: 2px solid red;
-    margin: 10px;
-    font-weight: bold;
-    font-size: 2rem;
+section {
+    height: 800px;
+}
+
+:target {
+    background-color: #4e4e4e;
+}
+
+.pseduo::first-line {
+    font-size: 3rem;
+    color: #ff0f0f
+}
+
+.pseduo::selection {
+    background-color: #080;
+    color: aqua
+}
+
+.pseduo::after,
+.pseduo::before {
+    content: "I am in CSS";
+    font-size: 5rem;
+    color: #00F;
+    background-color: #4444;
+}
+
+ol li::marker {
+    color: #F00
 }
