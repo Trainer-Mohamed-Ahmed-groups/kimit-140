@@ -4,99 +4,119 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="the page description" />
-    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="icon" href="./images/apple-icon.png">
+    <!--? My styles  -->
     <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/style.css">
-    <title>CSS course</title>
-
+    <title>First site</title>
 </head>
 
 <body>
-    <!-- <form action="">
-        <fieldset>
-            <legend>I am title</legend>
-            <label for="username">Username : </label>
-            <input type="text" class="userInput" name="username" id="username" autofocus placeholder="username"> <br><br>
-            <label for="userPassword">user password :</label>
-            <input type="password" class="userInput" name="userPassword" id="userPassword" placeholder="user password"><br><br>
-            <label for="userMessage">user message</label><br>
-            <textarea name="userMessage" id="userMessage" placeholder="Please enter your message" cols="30"
-                rows="10"></textarea>
-            <br><br>
-            <select name="userCourses" id="userCourses">
-                <optgroup label="user courses">
-                    <option value="html">HTML</option>
-                    <option value="css">CSS</option>
-            </select><br><br>
-            <input type="submit" class="submitBtn" value="OK">
-        </fieldset>
-    </form>
-
-
-    <div class="parent">
-        <div class="baby">1</div>
-        <div class="baby">2</div>
-        <div class="test">
-            <div class="baby">inside 1</div>
-            <div class="baby">inside 2</div>
-            <div class="baby">inside 3</div>
+    <!--? ---------------------------------- Start top  ------------------------------------>
+    <div class="top">
+        <div class="container float_parent">
+            <div class="left float_parent">
+                <div class="mail">
+                    <i class="fa-solid fa-envelope"></i>
+                    <span>info@kimit.com</span>
+                </div>
+                <div class="phone">
+                    <i class="fa-solid fa-phone"></i>
+                    <span>123456789</span>
+                </div>
+            </div>
+            <div class="right float_right">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-linkedin"></i>
+                <i class="fa-brands fa-instagram"></i>
+            </div>
         </div>
-        <div class="testTwo">
-            <div class="baby">This is inside test two</div>
-            <p class="baby">This is inside test two</p>
-        </div>
-        <p class="baby">This is P</p>
-        <div class="baby">3</div>
-        <div class="baby">4</div>
-        <p class="baby">This is P</p>
     </div>
--->
+    <!--? ---------------------------------- End top  ------------------------------------>
+    <!--? ---------------------------------- Start nav  ------------------------------------>
     <nav>
-        <ul>
-            <li>
-                <a href="#home">Home</a>
-            </li>
-            <li>
-                <a href="#about">About</a>
-            </li>
-            <li>
-                <a href="#contact">Contact</a>
-            </li>
-        </ul>
+        <div class="container float_parent">
+            <div class="logo">
+                <img src="./images/apple-icon.png" alt="site logo">
+            </div>
+            <ul class="navigation_list float_parent">
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#">About</a>
+                </li>
+                <li>
+                    <a href="#">Shop</a>
+                </li>
+                <li>
+                    <a href="#">Contacts</a>
+                </li>
+            </ul>
+            <div class="icons">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <i class="fa-solid fa-cart-shopping"></i>
+                <i class="fa-solid fa-user"></i>
+            </div>
+        </div>
     </nav>
-
-    <section id="home">
-        <h2>This is home</h2>
+    <!--? ---------------------------------- End nav  ------------------------------------>
+    <!--? ---------------------------------- Start header  ------------------------------------>
+    <header>
+        <div class="container float_parent">
+            <div class="left">
+                <h1>Hello first site</h1>
+                <h2>this is Mohamed Ahmed</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, quo rem nulla numquam quaerat
+                    dolore?</p>
+            </div>
+            <div class="right">
+                <img src="images/banner_img_03.jpg" alt="This is header image">
+            </div>
+        </div>
+    </header>
+    <!--? ---------------------------------- End header  ------------------------------------>
+    <!--? ---------------------------------- Start categories  ------------------------------------>
+    <section class="categories">
+        <div class="container">
+            <h2>Categories of the month</h2>
+            <p class="section_dec">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor ratione
+                necessitatibus, unde deserunt
+                cupiditate aliquam aliquid veritatis, nisi, dolorum alias quos officiis iste temporibus. Rem?</p>
+            <div class="products_container float_parent">
+                <div class="product">
+                    <img src="./images/category_img_01.jpg" alt="product">
+                    <h4>product name</h4>
+                    <button>Go shop</button>
+                </div>
+                <div class="product">
+                    <img src="./images/category_img_02.jpg" alt="product">
+                    <h4>product name</h4>
+                    <button>Go shop</button>
+                </div>
+                <div class="product">
+                    <img src="./images/category_img_03.jpg" alt="product">
+                    <h4>product name</h4>
+                    <button>Go shop</button>
+                </div>
+            </div>
+        </div>
     </section>
-    <section id="about">
-        <h2>This is about</h2>
+    <!--? ---------------------------------- End categories  ------------------------------------>
+    <!--? ---------------------------------- Start featured products  ------------------------------------>
+    <section class="featured_products">
+        <div class="container">
+            <h2>Featured products</h2>
+            <p class="section_dec">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor ratione
+                necessitatibus,
+                unde deserunt
+                cupiditate aliquam aliquid veritatis, nisi, dolorum alias quos officiis iste temporibus. Rem?</p>
+        </div>
     </section>
-    <section id="contact">
-        <h2>This is contacts</h2>
-    </section>
+    <!--? ---------------------------------- End featured products  ------------------------------------>
 
-
-    <p class="pseduo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis ea aliquid vero dolor
-        perspiciatis cupiditate ex distinctio voluptatum. Maxime nemo quis illo iste temporibus quae laboriosam nesciunt
-        sunt harum molestiae.
-        Explicabo pariatur exercitationem optio dignissimos aliquam et illo ullam? Perspiciatis nisi incidunt, atque
-        cumque voluptatem exercitationem laborum ipsam dicta inventore ipsum illo enim eaque, vero corporis numquam,
-        obcaecati libero eos.
-        Incidunt laborum exercitationem quibusdam quam, praesentium odio. Quasi dicta nemo asperiores placeat soluta
-        ipsa aspernatur, libero nesciunt eaque voluptatibus similique possimus sequi, animi error cum eos ab aliquam?
-        Quaerat, ab?
-        Reiciendis aliquid quisquam necessitatibus, ratione at mollitia ut dolor quos culpa libero officia nostrum
-        voluptatem, eligendi obcaecati labore explicabo dolorum! Corrupti quae expedita ea, obcaecati tenetur nesciunt
-        nam natus aut?</p>
-
-    <ol>
-        <li>ok</li>
-        <li>ok</li>
-        <li>ok</li>
-    </ol>
-
-    <i class="fa-brands fa-google fa-4x"></i>
 </body>
 
 </html>

@@ -1,7 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+/***********************************? Start global styles *************************************/
 
 :root {
-    scroll-behavior: smooth;
+    --top_bg_color: #212934;
+    --top_color: #cfd6e1;
+    --gray: #efefef;
+    --lighter: #949597;
+    --font_color: #2f3338;
+    --brand: #59ab6e;
+    --gold: #f1eb72;
+    --star: #bcbcbc;
+    --footer: #1d242d;
+    --reviews: #c2c4cd;
 }
 
 body {
@@ -9,86 +20,178 @@ body {
 }
 
 * {
-    /* Box sizing */
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 
-form {
-    width: 50%;
-    margin: 40px auto;
-    font-family: 'Raleway', sans-serif;
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+.float_parent>div,
+.float_parent>ul,
+.float_parent>li {
+    float: left;
+}
+
+.float_parent::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.float_right {
+    float: right !important
+}
+
+a {
+    text-decoration: none;
+}
+
+section h2 {
+    font-size: 2.5rem;
+    font-weight: 200;
+    margin-bottom: 15px;
     text-align: center;
 }
 
-fieldset {
-    border-radius: 15px;
+section .section_dec {
+    width: 50%;
+    margin: auto;
+    text-align: center;
 }
 
-form fieldset legend {
-    font-weight: 700;
-    padding: 0 10px;
-}
 
-form fieldset .userInput {
-    /* border-top: 0;
-    border-left: 0;
-    border-right: 0;*/
-
-
-    border: none;
-    border-bottom: solid #4e4e4e;
-    color: #343434;
-}
-
-form fieldset .userInput,
-form fieldset textarea {
-    outline: none;
-}
-
-form fieldset .submitBtn {
-    width: 120px;
-    height: 40px;
-    border-radius: 5px;
-    border: none;
+/***********************************? Start shared styles *************************************/
+.categories .product button {
+    background-color: var(--brand);
     color: #FFF;
-    font-weight: 800;
-    background: #4e4e4e;
-    cursor: pointer;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-weight: 300;
 }
 
-.parent :not(.baby:first-of-type) {
-    border: 2px solid #00F;
-    font-weight: bold;
-    font-size: 2rem;
-    margin: 10px;
+/***********************************? End shared styles *************************************/
+
+/***********************************? End global styles *************************************/
+/***********************************? Start top styles *************************************/
+.top {
+    background-color: var(--top_bg_color);
+    color: var(--top_color);
+    padding: 10px 0;
+    font-size: .8rem;
 }
 
-section {
-    height: 800px;
+.top .mail,
+.top .phone {
+    margin-inline-end: 10px;
 }
 
-:target {
-    background-color: #4e4e4e;
+.top .left i {
+    margin-inline-end: 5px;
 }
 
-.pseduo::first-line {
-    font-size: 3rem;
-    color: #ff0f0f
+.top .right i {
+    margin-inline-end: 5px;
 }
 
-.pseduo::selection {
-    background-color: #080;
-    color: aqua
+/***********************************? End top styles *************************************/
+/***********************************? Start nav styles *************************************/
+nav .logo img {
+    width: 100px;
 }
 
-.pseduo::after,
-.pseduo::before {
-    content: "I am in CSS";
-    font-size: 5rem;
-    color: #00F;
-    background-color: #4444;
+nav .navigation_list {
+    width: 71%;
+    margin-inline-start: 8%;
 }
 
-ol li::marker {
-    color: #F00
+nav .navigation_list li {
+    margin: 3% 6%;
+    list-style: none;
 }
+
+nav .navigation_list li a {
+    color: var(--font_color)
+}
+
+nav .icons {
+    margin-top: 40px;
+}
+
+nav .icons i {
+    margin-inline-end: 10px;
+}
+
+nav .icons .fa-cart-shopping::after {
+    content: "15";
+    font-size: .5rem;
+    background: #EEE;
+    padding: 5px;
+    border-radius: 50%;
+}
+
+/***********************************? End nav styles *************************************/
+/***********************************? Start header styles *************************************/
+header {
+    background-color: var(--gray);
+}
+
+header .container {
+    padding-top: 40px;
+}
+
+header .left {
+    margin-top: 8%;
+}
+
+header .left,
+header .right {
+    width: 50%;
+}
+
+header .left h1 {
+    font-weight: 200;
+}
+
+header .left h2 {
+    font-weight: 400;
+}
+
+header .left p {
+    color: var(--lighter)
+}
+
+header .right img {
+    max-width: 100%;
+}
+
+/***********************************? End header styles *************************************/
+/***********************************? Start categories styles *************************************/
+.categories {
+    text-align: center;
+}
+
+.categories .products_container {
+    margin-top: 30px;
+}
+
+.categories .product {
+    width: calc(100% / 3);
+}
+
+.categories .product img {
+    max-width: 80%;
+    border-radius: 50%;
+    border: 1px solid var(--star)
+}
+
+/***********************************? End categories styles *************************************/
+/***********************************? Start featured products styles *************************************/
+.featured_products
+{
+    background-color: var(--gray);
+}
+/***********************************? End featured products styles *************************************/
