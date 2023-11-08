@@ -5,3 +5,64 @@
 body {
     height: 5000px;
 }
+
+.flex_explain {
+    height: 500px;
+    background-color: #EEE;
+    display: flex;
+    /* Default */
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: space-between;
+
+}
+
+.child {
+    height: 100px;
+    width: 25%;
+    background-color: #F00;
+    color: #FFF;
+    text-align: center;
+    line-height: 100px;
+    font-weight: bold;
+}
+
+/*
+.child:first-child {
+    align-self: flex-start;
+    flex-grow: 1;
+    flex-shrink: 2;
+    flex-basis: 200px;
+    flex: 1;
+    order: 2;
+}
+
+.child:nth-child(2) {
+    flex-grow: 5;
+    flex-shrink: 10;
+    order: 1;
+}*/
+
+
+@media (max-width:600px) {
+    :root {
+        font-size: 8px;
+    }
+
+    .child {
+        width: 100%;
+    }
+}
+
+
+@media (min-width:601px) and (max-width:900px) {
+    :root {
+        font-size: 12px;
+    }
+
+    .child {
+        width: 50%;
+    }
+}
