@@ -1,158 +1,73 @@
 * {
     box-sizing: border-box;
-    color: var(--main_color)
 }
 
-:root {
-    --main_color: #fff;
-    --secondary_color: #ff214f;
-    --gary: #343a40;
-    --overlay: #343a408a;
+.animation_example {
+    height: 200px;
+    width: 200px;
+    background-color: #808;
+    transition: 1s all ease-in-out;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+    /*
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-name: loading_animation;
+    animation-delay: 1s;
+    */
+    animation: test 4s ease-in forwards
 }
 
-body {
-    height: 50000px;
-    background-color: var(--gary);
+.loading {
+    height: 70px;
+    width: 70px;
+    border: 5px solid #4e4e4e;
+    margin: 20px auto;
+    border-top-color: transparent;
+    border-radius: 50%;
+    animation: 1s loading_animation linear infinite
 }
 
+@keyframes loading_animation {
 
-button {
-    background-color: var(--secondary_color);
-    border: none;
-    height: 2rem;
-    min-width: 6rem;
-    padding: 0.5rem;
-    border-radius: 3px;
-    transition: .5s;
-    font-weight: bold;
-    text-transform: capitalize;
-}
-
-button:hover {
-    color: var(--secondary_color);
-    background-color: var(--main_color);
-}
-
-ul {
-    padding-inline-end: 40px;
-}
-
-h2 {
-    font-size: 3.5rem;
-    text-transform: uppercase;
-}
-
-h3 {
-    font-size: 3rem;
-}
-
-/*! ----------------------- Custom classes ----------- */
-.d_flex {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.text_center {
-    text-align: center;
-}
-
-/*? ********************** Global styles ***************************/
-/*? ********************** Start main section styles ***************************/
-.main_section {
-    background-image: linear-gradient(var(--overlay), var(--overlay)), url(../images/main.jpg);
-    height: 100vh;
-}
-
-nav {
-    align-items: center
-}
-
-nav ul {
-    flex: 1;
-    list-style: none;
-}
-
-nav ul:last-child {
-    justify-content: flex-end;
-}
-
-nav ul li {
-    text-transform: capitalize;
-    line-height: 30px;
-}
-
-nav ul li:not(:last-child) {
-    margin-inline-end: 30px;
-}
-
-nav ul a {
-    text-decoration: none;
-    font-weight: bold;
-}
-
-header {
-    text-align: center;
-    transform: translate(0, 100%);
-}
-
-/*? ********************** End main section styles ***************************/
-/*? ********************** Start about section styles ***************************/
-.about {
-    min-height: 95vh;
-}
-
-.about img,
-.about .left {
-    width: 50%;
-}
-
-.about .left {
-    padding: 0 45px;
-}
-
-
-
-/*? ********************** End about section styles ***************************/
-/*? ********************** Start menu section styles ***************************/
-/*? ********************** End menu section styles ***************************/
-
-.items img {
-    width: 25%;
-}
-
-
-
-
-
-
-
-
-
-@media (max-width:800px) {
-    :root {
-        font-size: 12px;
-    }
-
-    nav {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    nav img {
-        width: 60px;
-        order: -1;
-    }
-
-    /*? About section */
-    .about img,
-    .about .left {
-        width: 100%;
+    100% {
+        transform: rotate(360deg);
     }
 
 }
 
-@media (max-width:400px) {
-    .items img {
-        width: 50%;
+@keyframes session {
+
+    25% {
+        top: 0;
+        left: 400px;
+    }
+
+    50% {
+        top: 400px;
+        left: 400px;
+    }
+
+    75% {
+        top: 400px;
+        left: 0;
+    }
+
+    100% {
+        top: 0;
+        left: 0;
+    }
+
+}
+
+@keyframes test {
+    0% {
+        top: 0;
+    }
+
+    100% {
+        top: 200px;
     }
 }
