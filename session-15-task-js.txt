@@ -1,0 +1,3 @@
+Create an object that takes an input from the user for his first name, last name, country and age then console log
+
+hello (fullname), your age in years is (age in years), your age in days will be (age in days), and you live in (country)
