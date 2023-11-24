@@ -1,0 +1,9 @@
+1-Area of traingle => Write a function that takes the base and height of a triangle and return its area
+
+2-Converts minutes into sec => Write a function that takes an integer minutes and converts it to seconds
+
+3-Return the Next Number from the Integer Passed => Create a function that takes a number as an argument, increments the number by +1 and returns the result.
+
+4-Return first element in array => Create a function that takes an array containing only numbers and return the first element.
+
+5-Return something to me => Write a function that returns the string "something" joined with a space " " and the given argument a.
