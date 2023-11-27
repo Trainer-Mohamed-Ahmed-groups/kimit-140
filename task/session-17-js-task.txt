@@ -1,0 +1,17 @@
+1- Power calculator => Create a function that takes voltage and current and returns the calculated power.
+
+2- Sum of Polygon Angles => Given an n-sided regular polygon n, return the total sum of internal angles (in degrees)
+NOTE =>>> The formula (n - 2) x 180 gives the sum of all the measures of the angles of an n-sided polygon.
+
+3- Basketball Points => You are counting points for a basketball game, given the amount of 2-pointers scored and 3-pointers scored, find the final points for the team and return that value.
+
+4- Basic Variable Assignment => A student learning JavaScript was trying to make a function. His code should concatenate a passed string name with string "Kimit" and store it in a variable called result. He needs your help to fix this code.
+The Code to be fixed:
+
+function nameString(name){
+	var b == "Edabit"
+	var result == name + b
+  	return result
+}
+
+fix this code to work properly
