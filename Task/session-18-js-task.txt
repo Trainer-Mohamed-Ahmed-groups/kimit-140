@@ -1,0 +1,7 @@
+1- is the number less than or equal to zero? => Create a function that takes a number as its only argument and returns true if it's less than or equal to zero, otherwise return false.
+
+2- less than 100? => Given two numbers, return true if the sum of both numbers is less than 100. Otherwise return false.
+
+3- return the remainder from two numbers => There is a single operator in JavaScript, capable of providing the remainder of a division operation. Two numbers are passed as parameters. The first parameter divided by the second parameter will have a remainder, possibly zero. Return that value.
+
+4- check even or invalid input => create a function that takes two parameters and check if the two numbers are even it will console log(even input) if the two numbers are odd or anything else it will console log(invalid input).
