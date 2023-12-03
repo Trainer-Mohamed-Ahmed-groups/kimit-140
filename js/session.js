@@ -1,106 +1,94 @@
-var courseId = 0;
+"use strict";
+var myName = "Mohamedddd";
 
-if (courseId > 0) {
+switch (myName) {
+    case "Ahmed":
+        console.log("It is Ahmed")
+        break;
+    case "Mohamed":
+        console.log("It is Mohamed OR")
+        break;
+    default:
+        console.log("It have not any case")
+}
+
+
+
+try {
     console.log("OK")
+} catch (error) {
+    console.warn(error.message)
 }
-else if (courseId < 0) {
-    console.log("LT Zero")
-}
-else {
-    console.log("It is zero")
-}
-///////////////////////////////////////
-/* Relational operators */
-
-var courseName = "JS";
-
-if (courseName == "React") {
-    console.log("It is React")
-}
-else {
-    console.log("It is NOT React")
-}
-
-var userId = 5;
-
-if (userId !== "5") console.log("OK")
-else console.log("NOT ")
-
-//////////////////////////////////////////
-/* Unary arithmetic operators*/
-var myId = 2;
-
-
-// myId++;
-
-console.log(++myId) // 3 3 3 3
-console.log(myId--) // 3 3 3 3
-console.log(++myId) // 3 3 4 3
-console.log(myId++) // 3 3 4 3
-console.log(myId)   // 4 4 4 4
-
-console.log("******************")
-//////////////////////////////
-/* Binary arithmetic operators*/
-console.log(10 % 3)
-console.log(13 % 5)
-console.log(14 % 2)
-
-
-//////////////////////////////////////
-console.log(5 !== "5")
-
-/////////////////////////////////
-var test = 5
-
-test += 10;
-
-console.log(test)
-
-console.log(!false)
-////////////////////////////////////////////
-/* Logical operators */
-
-if (5 > 4 && 10 > 8) {
-    console.log("OK")
-}
-else {
-    console.log("NO")
+finally {
+    console.info("This is finally block")
 }
 
 
-if (5 > 4 || 10 > 80) {
-    console.log("OK")
+console.log("OK")
+
+function getRec(x, y) {
+    if (isNaN(x) || isNaN(y)) throw "Not valid"
+    else return x * y
 }
-else {
-    console.log("NO")
+
+
+try {
+    console.log(getRec(5, 8))
+} catch (error) {
+    console.error(error)
 }
 
-////////////////////////////
 
-var degree = +prompt("Please enter your degree");
+// x = 15
+
+// console.log(x)
+
+var y = 1;
+
+// while (y <= 10) {
+//     console.log(y)
+//     y++
+// }
+
+// do {
+//     console.log(y)
+//     y++
+// } while (y <= 10);
 
 
-/*
-
-if (isNaN(degree)) {
-    console.error("It is not a number")
+for (var t = 1; t <= 10; t++) {
+    console.log(t)
 }
-else {
-    if (degree <= 100 && degree >= 0) {
-        if (degree >= 50) console.log("Pass")
-        else console.log("Fail")
+console.log("----------------")
+for (var t = 1; t <= 10; t++) {
+    if (t % 2 === 0) {
+        continue;
     }
-    else {
-        console.log("Not valid number")
-    }
+    console.log(t)
 }
-*/
+console.log("----------------")
 
-console.log(5 && undefined && 8)
+for (var t = 1; t <= 10; t++) {
+    if (t === 5) {
+        break;
+    }
+    console.log(t)
+}
+console.log("----------------")
 
-// And operator returns first false and last true ( False target )
+var persons = ["Mohamed", "Ahmed", "Nemat", "Kareem"];
 
-console.log(0 || false || 5 || "Ahmed")
 
-// Or operator returns first true and last false ( True target )
+for (var index = 0; index < persons.length; index++) {
+    console.log(persons[index])
+}
+
+
+if (5 > 40) {
+    console.log("OK")
+}
+
+function test() {
+    return "Javascript course"
+}
+console.log(test())
