@@ -1,0 +1,11 @@
+1- find book by it's title => the findBookByTitle function takes an array of book objects (books) and a target title. It manually iterates through the array using a for loop, checks if the target title exists, and then uses an if condition to either display information about the found book or print a message indicating that the book was not found. (Hint search about array of objects)
+
+2- does number exists? => the checkNumberExistence function takes an array of numbers (numbers) and a target number. It manually iterates through the array using a for loop, checks if the target number exists, and then uses an if condition to print the appropriate message based on the result of the manual iteration.
+
+3- Print multiplication table => Create a function printMultiplicationTable that takes a number as input and prints its multiplication table up to 12. Then, it iterates from 1 to 12 and calls this function for each number, printing the multiplication tables for numbers 1 to 12.
+
+4- Factorial of a given number => function checks if the input is between 2 and 20 before proceeding with the factorial calculation. It then uses a loop to multiply the numbers from 2 to the given input to calculate the factorial.
+
+5- Apply discount => Create a function that takes object as a parameter and checks if the user age is greater than 18 he can have the discount if not, so he will not have the discount.
+
+6- check product availability => the checkProductAvailability function takes an array of product objects (products) and a target product name. It manually iterates through the array using a for loop, checks if the target product exists, and then prints a message indicating whether the product is available and in stock or not. The function exits early if the product is found to avoid unnecessary iterations.
