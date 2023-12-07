@@ -1,0 +1,16 @@
+-----Deadline Tommorrow before the online session(Task 1 and 2)
+-------------------Deadline Sunday (Task 3 and 4)
+
+1- Matchstick Houses => Create a function that takes a number (matchstick house) as an argument and returns the number of matchsticks in that (matchstick house)
+NOTE:
+-Step 0 returns 0 matchsticks.
+-The input (step) will always be a non-negative integer.
+
+2- How Much is True? => Create a function which returns the number of true values there are in an array.
+NOTE:
+-Return 0 if given an empty array.
+-All array items are of the type boolean (true or false).
+
+3- Perimeters with a catch => Write a function of two parameters that takes a number and returns the perimeter of either a circle or a square. The input will be in the form (letter l, number num) where the letter will be either "s" for square, or "c" for circle, and the number will be the side of the square or the radius of the circle.
+
+4- Find and sum even number from an array => Create a function that takes an array as parameter and prints out the even number in the array and their summition.
