@@ -1,0 +1,39 @@
+1- Your task is to create a function called transformObject that takes the person object as an argument and transforms it into a new object with the following properties:
+
+fullName: a string combining the person's name and age. (e.g., "John 30")
+jobLocation: a string combining the person's job and city. (e.g., "Developer in Example City")
+
+Your function should return the transformed object.
+
+initial object example:
+var person = {
+  name: "John",
+  age: 30,
+  job: "Developer",
+  city: "Example City"
+};
+
+2- Your task is to create a function called filterPeople that takes the people array as an argument and returns a new array containing only the people who are 30 years old or older.
+
+initial array of objects:
+var people = [
+  { name: "John", age: 30 },
+  { name: "Alice", age: 25 },
+  { name: "Bob", age: 35 },
+  { name: "Eve", age: 28 }
+];
+
+3- Your task is to create a function called calculateAverageGrades that takes the students array as an argument and transforms it into a new array with the following properties:
+
+studentAverages: an array of objects where each key is a student's name, and the value is their average grade.
+
+Your function should return the transformed array array of objects.
+Hint ==> the new array of objects will contain objects like this for example: {name: "Alice", average: 80%}
+
+initial array of objects:
+var students = [
+  { name: "Alice", grades: [90, 85, 88] },
+  { name: "Bob", grades: [78, 92, 87] },
+  { name: "Charlie", grades: [95, 89, 78] },
+  { name: "David", grades: [88, 90, 92] }
+];
