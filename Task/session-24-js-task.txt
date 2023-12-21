@@ -1,0 +1,15 @@
+1- How Much is True? => Create a function which returns the number of true values there are in an array.
+NOTE:
+-Return 0 if given an empty array.
+-All array items are of the type boolean (true or false).
+
+2- Find and sum even number from an array => Create a function that takes an array as parameter and prints out the even number in the array and their summition.
+
+3- A word is on the loose and now has tried to hide amongst a crowd of tall letters! Help write a function to detect what the word is, knowing the following rules:
+
+- The wanted word is in lowercase.
+- The crowd of letters is all in uppercase.
+- Note that the word will be spread out amongst the random letters, but their letters remain in the same order.
+Hint ==> the input string will be something like this "SDNIDWDWDNDwordKJNJSDN".
+
+4- Eligiblity for a discount => the "checkDiscountEligibility" function takes a person object with a name and age. The function uses an if condition to check if the person's age is between 18 and 30 (inclusive). If the condition is true, it prints a message indicating that the person is eligible for a discount; otherwise, it prints a message saying the person is not eligible.
