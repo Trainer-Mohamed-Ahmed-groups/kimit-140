@@ -1,0 +1,21 @@
+1- Check Student Grade => Create a function that takes a grade as a parameter if that grade is between 90 and 100 it prints "A", between 85 and 90 it prints "B", between 75 and 85 it prints "C", between 65 and 75 it prints "D", anything else it prints "F"
+
+2- Find the greatest number => Create a function that takes 3 parameters number1, number2, and number3, return the greatest number between the 3 parameters.
+
+3- let object = {
+    name: "ahmed",
+    age: "55",
+    city: ["Egypt", "Alexandria"],
+    married: true,
+    sons: [
+            {name: "mohamed", age: 30},
+            {name: "ashraf", age: 20},
+            {name: "mai", age: 15}
+        ],
+}
+
+- you have this object, create a function for a movie theater ticket box that takes this object as a parameter and checks if the father is not married he will enter the movie and pay the total price of one ticket, but if he is married but does not have children he will buy two tickets, in case that he is married and have children he will buy 5 tickets but if the age of the person is more than 25 no discount will be applied, if the age of the person is less than 25 and more than 16 a discount of 10% will be applied, and if the age of the person is less than 16 a discount of 25% will be applied. all i want from you to be displayed at the end is the price of the ticket like this
+OUTPUT: (number of ticket bought) tickets and the total price is (total price).
+
+----NOTE----
+ticket price = 100$
