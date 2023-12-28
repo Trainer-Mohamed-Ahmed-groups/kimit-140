@@ -1,0 +1,26 @@
+1- Your task is to create a function called filterPeople that takes the people array as an argument and returns a new array containing only the people who are 30 years old or older.
+
+initial array of objects:
+var people = [
+  { name: "John", age: 30 },
+  { name: "Alice", age: 25 },
+  { name: "Bob", age: 35 },
+  { name: "Eve", age: 28 }
+];
+
+2- 4- Find and sum even number from an array => Create a function that takes an array as parameter and prints out the even number in the array and their summition.
+
+3- 1- Your task is to create a function called transformObject that takes the person object as an argument and transforms it into a new object with the following properties:
+
+fullName: a string combining the person's name and age. (e.g., "John 30")
+jobLocation: a string combining the person's job and city. (e.g., "Developer in Example City")
+
+Your function should return the transformed object.
+
+initial object example:
+var person = {
+  name: "John",
+  age: 30,
+  job: "Developer",
+  city: "Example City"
+};
