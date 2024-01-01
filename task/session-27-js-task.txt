@@ -1,0 +1,11 @@
+1- Task: Count Vowels
+
+Write a JavaScript function that takes a string as input and counts the number of vowels (a, e, i, o, u) in the given string. The function should return the count of vowels.
+
+2- Task: Title Case Conversion
+
+Write a JavaScript function that takes a sentence as input and converts it to title case. Title case means that the first letter of each word in the sentence is capitalized, while the rest of the letters are in lowercase.
+
+3- Task: Palindrome Check for Phrases
+
+Modify the previous palindrome check task to handle phrases by considering only alphanumeric characters and ignoring spaces, punctuation, and capitalization.
