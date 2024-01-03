@@ -1,144 +1,206 @@
-var myName = "Mohamed",
-    lastName = "Ahmed",
-    job = "frontend developer and frontend instructor";
+/************************* Array methods ****************************/
+var arr1 = ["Mohamed", "Ahmed", "Ali", "Omar", "Mohamed", 5, 8, 87, 12],
+    arr2 = ["Mahmoud", "Omar", "Shimaa"],
+    arr3 = [5, 6];
 
-console.log(myName);
-/**************************** length ************************************
-console.log(myName.length);
 
-/**************************** charAt ************************************
 
-console.log(myName.charAt(0))
-/**************************** charCodeAt ***************************
+/********************************************* concatenation ****************
 
-console.log(lastName.charCodeAt(0))
+console.log(arr1.concat(arr2, arr3));
 
-/**************************** fromCharCode ************************************
+/*********************************************  copy ********
 
-console.log(String.fromCharCode(65))
-/**************************** concat ************************************
+console.log(arr1.copyWithin(3, 1));
 
-console.log(myName.concat(lastName))
+console.log(arr1);
+/*********************************************  every ****************
+var ages = [32, 33, 16, 40];
 
-/**************************** startsWith ************************************
+function checkAdult(age) {
+    return age >= 18;
+}
 
-console.log(job.startsWith("front"))
-/**************************** endsWith ************************************
+console.log(ages.every(checkAdult))
 
-console.log(job.endsWith("instructor"))
+/*********************************************  some ****************
+var ages = [16, 4, 25];
 
-/**************************** includes ************************************
+function checkAdult(age) {
+    return age >= 18;
+}
+console.log(ages.some(checkAdult))
 
-console.log(job.includes("and"))
+/*********************************************   filter ****************
+var ages = [32, 3, 16, 40, 5, 55];
 
-/**************************** indexOf ************************************
-console.log(myName.indexOf("ds"))
+function checkAdult(age) {
+    return age >= 18;
+}
+console.log(ages.filter(checkAdult));
 
-/**************************** lastIndexOf ************************************
-console.log(job.lastIndexOf("frontend"))
+/*********************************************   forEach ***************
 
-/**************************** match ************************************
-// console.log(job.match("Front"))
-console.log(job.match(/Front/ig))
+console.log(arr2.forEach(function (item) {
+    return item
+}))
 
-/**************************** repeat ************************************
-console.log(myName.repeat(5))
+console.log("-".repeat(20))
 
-/**************************** replace ************************************
+var newClients = arr2.map(function (item) { return "Client : " + item })
+console.log(newClients)
+/*********************************************   find ****************
+var ages = [2, 32, 33, 16, 40];
 
-console.log(job.replace(/front/g, "new"))
-// console.log(job.replace(/front/g, "new instructor"))
+function checkAdult(age) {
+    return age >= 18;
+}
+console.log(ages.find(checkAdult));
 
-// gi
-/**************************** search ************************************
-console.log(job.search("developer"))
+/*********************************************   find index ***************
+var ages = [2 , 32, 33, 16, 40];
 
-/**************************** slice ******************VIMP******************
+function checkAdult(age) {
+    return age >= 18;
+}
+console.log(ages.findIndex(checkAdult));
+/*********************************************   fill ***************
 
-console.log(job.slice(7, 13))
+console.log(arr1.fill("JS", 2, 5));
 
-/**************************** split *********************VIMP***************
+/*********************************************************************************************** */
+/*********************************************   array from **************
 
-console.log(job.split(" "))
-/**************************** substr ************************************
-console.log(myName.substr(1, 3))
+var myName = "Mohamed ";
 
-/**************************** substring ************************************
-console.log(myName.substring(1, 3))
+console.log(Array.from(myName));
 
-/**************************** toLowerCase ************************************
+var test = [2, 4, 6, 8]
 
-console.log(myName.toLowerCase())
+console.log(Array.from(test, function (item) { return item * 2 }))
 
-/**************************** toUpperCase ************************************
+console.log(Array.from([1, 2, 3], x => x + x));
 
-console.log(myName.toUpperCase())
-/**************************** trim ************************************/
+/*********************************************   includes **************
+console.log(arr1);
+console.log(arr1.includes("Mohamed"));
 
-var newJob = "             Front  end         developer             ";
 
-console.log(newJob);
-console.log(newJob.trimEnd());
+/*********************************************   index of  **************
+console.log(arr1);
+
+console.log(arr1.indexOf("Mohamed"));
+
+// console.log(arr1.indexOf("Ahme")) //error
+
+/*********************************************   last index of  **************
+console.log(arr1);
+console.log(arr1.lastIndexOf("Mohamed"))
+
+/*********************************************   is array **************
+
+console.log(Array.isArray(arr1))
+
+
+/*********************************************   join **************
+console.log(arr1.join(" - "));
+console.log(typeof arr1.join(""));
+
+/*********************************************   pop ************** x >> from main array *
+console.log(arr1);
+console.log(arr1.pop());
+console.log(arr1);
+
+/*********************************************   shift ************** from main array *
+console.log(arr1);
+console.log(arr1.shift());
+console.log(arr1);
+/*********************************************   push ************** X >>> *
+console.log(arr1);
+arr1.push("JS", "React");
+console.log(arr1);
+
+/*********************************************   unshift **************
+console.log(arr1);
+arr1.unshift("MO2");
+console.log(arr1);
+
+/*********************************************   reverse **************
+console.log(arr1);
+console.log(arr1.reverse());
+
+/*********************************************   sort **************
+
+var x = ["Mohamed", "Mahmoud", "Ali", "aza", 12, "aac", "abb"];
+console.log(x.sort());
+
+var nums = [9, 8, 25, 4, 7, 16, 3, 2, 1]
+
+console.log(nums.sort((a, b) => a - b))
+
+/*********************************************   slice **************
+console.log(arr1);
+console.log(arr1.slice(2, 4));
+console.log(arr1);
+
+/*********************************************   splice *************
+console.log(arr1);
+
+console.log(arr1.splice(1, 3, "Javascript", "HTML", "CSS"));
+
+console.log(arr1);
+
+/*********************************************   to string **************/
+
+console.log(arr1.toString());
+console.log(typeof arr1.toString());
 // */
 
 
+
+////////////////////////////////////////////////////////////////////
 /*
-JS task 
 
-Task 1
-    Create an array include some names then check the names starts with letter m or not 
-    Then print in console   this name starts with letter m 
-    Use array with some capital and small example ["Mohamed" , "mahmoud" , "Ali" ] want to output mohamed and mahmoud
--------------------------------
-*/
-/*
-function findChar(str, searchValue) {
-    if (str.indexOf(searchValue) >= 0) {
-        console.log("It is exist and the index of it is " + str.indexOf(searchValue))
-    }
-    else console.log("Not exist")
-}
+2- create  a prompt to get tasks and push all in an array then output all at tour page .
 
-findChar("Ali", 'A')
-findChar("Ali", 'M')
-
-let findSpace = function (str) {
-    return str.match(/ /g).length
-}
-
-var userInput = prompt("Please enter your text");
-
-console.log(findSpace(userInput))
-
-function calcWords(str) {
-    return str.split(" ").length
-}
-
-var userInput2 = prompt("Please enter ")
+3- create a  three prompt ages  and get it's values then check if any one is under age or not
+EXAMPLE >>> [25 , 5 ,  12 , 25 , 55]
+OUTPUT >>> you have all is not +18 (with every if return true) && you have just 5 and 12 is underage (with if condition)
 
 
-console.log(calcWords(userInput2))
 
-function greaterThanFive(input) {
-    let start = input.split(" "),
-        result = "";
-    for (i = 0; i < start.length; i++) {
-        if (start[i].length > 5) result += start[i] + " "
-    }
-    return result;
-}
 
-console.log("Your words : " + greaterThanFive(userInput2))
+5- create an array when you find (no) then convert all next elements in array to (thanks)
+EXAMPLE >>> ["Mohamed" , 1 , "Hey" , "no" ,"Front" , "JS"] 
+OUTPUT >>> ["Mohamed" , 1 , "Hey" , "no" ,"thanks" , "thanks"] 
+hint : user loop , if and fill()
 */
 
-function sayHello() {
-    console.log("Hello")
-}
 
-// let myInterval = setInterval(sayHello, 1000)
-let myTimeout = setTimeout(sayHello, 3000);
+/*
+var input1 = prompt("Please enter task 1"),
+    input2 = prompt("Please enter task 2"),
+    input3 = prompt("Please enter task 3"),
+    input4 = prompt("Please enter task 4");
 
-function stopIntervalFn() {
-    // clearInterval(myInterval)
-    clearTimeout(myTimeout)
-}
+
+var tasks = [];
+
+tasks.push(input1, input2, input3, input4)
+
+console.log(tasks)
+
+var userOne = prompt("Please enter user's name 1"),
+    userTwo = prompt("Please enter user's name 2"),
+    userThree = prompt("Please enter user's name 3"),
+    userFour = prompt("Please enter user's name 4"),
+    users = [];
+
+users.push(userOne, userTwo, userThree, userFour)
+
+users.map((user, index) => console.log(user + " => " + (index + 1)))
+console.log("-".repeat(10))
+users.map((user, index) => console.log(index + 1 + " => " + user))
+
+
+*/
