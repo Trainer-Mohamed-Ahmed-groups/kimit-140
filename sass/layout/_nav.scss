@@ -1,0 +1,6 @@
+nav {
+    text-align: center;
+    background-color: #F00;
+    color: #00F;
+    @include radius(50%)
+}

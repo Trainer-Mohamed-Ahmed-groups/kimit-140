@@ -1,0 +1,17 @@
+footer {
+    display: flex;
+    justify-content: space-around;
+
+    span {
+        font-weight: bold;
+
+        &:nth-child(2) {
+            color: $main_color;
+            @include radius
+        }
+
+        >a {
+            text-decoration: none;
+        }
+    }
+}
