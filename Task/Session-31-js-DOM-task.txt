@@ -8,3 +8,4 @@
 NOTES:
 - Phone number must be less than 11 digits.
 - the input field will not accept strings, if user enters string the error message will appear and say invalid input.
+- the error message color will be red.
