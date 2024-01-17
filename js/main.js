@@ -1,57 +1,63 @@
-console.log(document)
-console.log(document.body)
-console.log(document.characterSet)
+var first_Division = document.getElementsByClassName("firstDivision")[0]
 
-document.open()
-document.write("<p>This is P</p>")
+console.log(first_Division.innerHTML)
+console.log(first_Division.outerHTML)
 
 
-// With ID
-var my_id = document.getElementById("myId")
-console.log(my_id)
-// console.log(my_id.className)
+////////////////////////////////
+var output = document.querySelector("#output");
 
-function changeColor() {
-    my_id.className = "from_JS"
+// output.innerHTML = "<span>This is from JS</span>"
+
+var counter = 0
+function addOne() {
+    counter++;
+    output.innerHTML = counter
 }
 
-//With Class 
-var my_class = document.getElementsByClassName("myClass")
 
-console.log(my_class)
+var user_input = document.getElementById("userInput"),
+    result = document.getElementById("result")
 
-
-// Name
-var my_name = document.getElementsByName("education");
-
-console.log(my_name)
-
-console.log("*".repeat(20))
-// Tag name 
-var my_tags = document.getElementsByTagName("div");
-
-console.log(my_tags)
+function resultFn() {
+    result.innerHTML += `<div>${user_input.value}</div>`
+}
 
 
+/////////////////////////////////////
+var add_text = document.querySelector("#addText");
 
-console.log("*".repeat(20))
-/*********************************************************/
-
-// var single = document.querySelector("section > div")
-
-// console.log(single)
-
-var multi = document.querySelectorAll("div")
+add_text.innerHTML = "<h2>This from Javascript</h2>"
+add_text.textContent = "<h2>This from Javascript</h2>"
 
 
-console.log(multi)
+/////////////////////////////////////////////////
+var attr_explain = document.getElementById("attrExplain");
 
-////////////////////////////////////////////////////////
-console.log(my_name[0].value)
-console.log(my_name[1].getAttribute("data-kimit"))
+console.log(attr_explain.getAttribute('kimit'))
 
-function getVal(){
-    // console.log(my_name[2].value)
-    if(my_name[2].value.length >= 8) console.log(my_name[2].value.toUpperCase())
-    else alert("This is less than 8")
+
+var att_fn = function () {
+    attr_explain.setAttribute('from-js', 'This attribute come from Javascript')
+}
+
+
+//////////////////////////////////////////////////
+var user_password = document.getElementsByName("userPassword")[0],
+    show_btn = document.getElementById("showBtn")
+
+
+console.log(user_password.getAttribute("type"))
+
+
+
+function change_type() {
+    if (user_password.getAttribute("type") === 'password') {
+        user_password.setAttribute("type", "text")
+        show_btn.textContent = "Hide password"
+    }
+    else {
+        user_password.setAttribute("type", "password")
+        show_btn.textContent = "Show password"
+    }
 }

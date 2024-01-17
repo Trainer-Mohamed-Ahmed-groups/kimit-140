@@ -9,38 +9,52 @@
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/style.css">
     <!-- --------------------------- Head tags --------------------------------------->
-    <title>Sass session</title>
+    <title>JS session</title>
 </head>
 
 <body>
-    <div id="myId" class="myClass">This is division with ID & class</div>
-    <button onclick="changeColor()">Change color</button>
-    <div class="myClass">This is division with Class</div>
-    <div class="myClass">This is division with Class</div>
-    <div class="myClass">This is division with Class</div>
-    <div>This is an empty division</div>
-    <div>This is an empty division</div>
+    <div class="firstDivision">
+        <p>This is p</p>
+        <span>This is span</span>
+    </div>
 
-    <section>
-        <div>This is in section</div>
+    <div id="output"></div>
 
-        <nav>
-            <div>This is in section in nav</div>
-        </nav>
-    </section>
+    <button onclick="addOne()">Click to Add one</button>
+
+
     <hr>
-
-    <input type="text" name="education" value="First input">
-    <input type="text" name="education" data-kimit="This is from Kimit academy">
-    <input type="text" name="education">
-    <input type="text" name="education">
-    <input type="text" name="education"> <br><br>
-    <button onclick="getVal()">Get value</button>
+    <input type="text" id="userInput">
+    <button onclick="resultFn()">Output result</button>
+    <div id="result"></div>
 
     <hr>
 
+    <div id="usersOutput" class="row"></div>
+
+    <hr>
+    <hr>
+    <div id="addText"></div>
+    <hr>
+    <hr>
+
+    <div id="attrExplain" kimit="This is title again">This is attribute explain</div>
+    <button onclick="att_fn()">Add attr</button>
+    <hr>
+    <hr>
+    <div class="container">
+        <div class="row">
+            <div class="col-9">
+                <input type="password" class="form-control" name="userPassword" id="">
+            </div>
+            <div class="col-3">
+                <button id="showBtn" class="btn btn-primary" onclick="change_type()">Show password</button>
+            </div>
+        </div>
+    </div>
 
     <script src="./js/main.js"></script>
+    <!-- <script src="./js/users.js"></script> -->
 </body>
 
 </html>
