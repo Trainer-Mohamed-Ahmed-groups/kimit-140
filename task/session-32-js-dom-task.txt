@@ -1,0 +1,8 @@
+1- use this api to display the values in the bootstrap card but without the image like the one you did with Eng Mohamed, but the data will be displayed only when you click on a button, after clicking the button the data will appear in the cards and the button will disappear. HINT ==> Search on styling with JavaScript
+
+API => https://jsonplaceholder.typicode.com/users
+
+2- Make a well designed registration form all the fields should be required and if the user tries to submit the form without writing something in all the fields if will display an error message at the bottom or an alert that says "all fields are required", after submitting the form you should display all the values entered in the form in the console, and in the console you will display the firstname and lastname together as fullname like if (firstname: samir, lastname: ali) in the console it will be Fullname: samir ali
+
+- fields in the forms [firstname, lastname, email, password, confirm password].
+- password and confirm password VALUES should be the same else the form will not submit.

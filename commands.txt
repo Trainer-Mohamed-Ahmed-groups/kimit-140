@@ -1,9 +1,0 @@
-Install sass : npm i sass -g 
-
-----------------------------------
-Beauty watch
-sass -w sass:css
-
-----------------------------------
-Compressed watch
-sass -w sass:css --style compressed
