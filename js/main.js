@@ -1,63 +1,43 @@
-var first_Division = document.getElementsByClassName("firstDivision")[0]
-
-console.log(first_Division.innerHTML)
-console.log(first_Division.outerHTML)
-
-
-////////////////////////////////
-var output = document.querySelector("#output");
-
-// output.innerHTML = "<span>This is from JS</span>"
-
-var counter = 0
-function addOne() {
-    counter++;
-    output.innerHTML = counter
-}
+var first_element = document.createElement('div'),
+    first_text = document.createTextNode('This is in JS'),
+    first_comment = document.createComment("This comment from JS");
 
 
-var user_input = document.getElementById("userInput"),
-    result = document.getElementById("result")
-
-function resultFn() {
-    result.innerHTML += `<div>${user_input.value}</div>`
-}
+console.log(first_element);
+console.log(first_text);
 
 
-/////////////////////////////////////
-var add_text = document.querySelector("#addText");
-
-add_text.innerHTML = "<h2>This from Javascript</h2>"
-add_text.textContent = "<h2>This from Javascript</h2>"
-
-
-/////////////////////////////////////////////////
-var attr_explain = document.getElementById("attrExplain");
-
-console.log(attr_explain.getAttribute('kimit'))
-
-
-var att_fn = function () {
-    attr_explain.setAttribute('from-js', 'This attribute come from Javascript')
-}
-
-
-//////////////////////////////////////////////////
-var user_password = document.getElementsByName("userPassword")[0],
-    show_btn = document.getElementById("showBtn")
-
-
-console.log(user_password.getAttribute("type"))
+first_element.append(first_text, first_comment)
 
 
 
-function change_type() {
-    if (user_password.getAttribute("type") === 'password') {
-        user_password.setAttribute("type", "text")
-        show_btn.textContent = "Hide password"
-    }
-    else {
-        user_password.setAttribute("type", "password")
-        show_btn.textContent = "Show password"
-    }
+var parent = document.getElementById('parent');
+
+console.log(parent.children);
+console.log(parent.childNodes);
+
+
+parent.appendChild(first_element)
+
+console.log(document.forms)
+console.log(document.images)
+
+
+parent.style.color = '#f00';
+parent.style.backgroundColor = '#888'
+
+
+var new_item = document.querySelector('#newItem');
+
+console.log(new_item)
+
+
+function add_new_class() {
+    // new_item.className = 'from_JS'
+    // new_item.classList.add('from_JS')  //Adding a class
+    // new_item.classList.remove('blueColor')  //Remove a class
+    // new_item.classList.toggle('from_JS')  // Toggle a class
+    console.log(new_item.classList.contains('testdd'))  // Toggle a class
+    console.log(new_item.classList.item(1))
+
 }
