@@ -39,7 +39,7 @@ let addingTask = (val) => {
 }
 
 let checkDuplicate = (val) => {
-    if (tasks_data.findIndex((v) => v === val) === - 1) return true
+    if (tasks_data.findIndex(v => v.text === val) === -1) return true
     else return false
 }
 
@@ -75,11 +75,11 @@ let saveData = () => {
 
 // document.cookie = 'username = Mohamed;expires=Thu, 18 Dec 2024 12:00:00 UTC'
 
-tasks = JSON.parse(localStorage.getItem('tasks'));
+saved_tasks = JSON.parse(localStorage.getItem('tasks'));
 
-for (let index = 0; index < tasks.length; index++) {
-    const task = tasks[index];
-    tasks = JSON.parse(localStorage.getItem('tasks'));
+for (let index = 0; index < saved_tasks.length; index++) {
+    const task = saved_tasks[index];
+    saved_tasks = JSON.parse(localStorage.getItem('tasks'));
     addingTask(task.text)
     countTasks()
     finishTask()
