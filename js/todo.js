@@ -75,7 +75,7 @@ let saveData = () => {
 
 // document.cookie = 'username = Mohamed;expires=Thu, 18 Dec 2024 12:00:00 UTC'
 
-saved_tasks = JSON.parse(localStorage.getItem('tasks'));
+saved_tasks = localStorage.getItem('tasks') ? JSON.parse(localStorage.getItem('tasks')) : [];
 
 for (let index = 0; index < saved_tasks.length; index++) {
     const task = saved_tasks[index];
