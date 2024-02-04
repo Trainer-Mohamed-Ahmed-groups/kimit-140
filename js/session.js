@@ -1,9 +1,6 @@
-// var test = document.getElementsByClassName('test')[0]
-
-// console.log(test)
-
-$(function () {
-    $("p").click(function () {
-        $(this).hide();
+$(document).ready(function () {
+    $("button").click(function () {
+        $("#div1").load("demo_test.html");
     });
-})
+});
+
