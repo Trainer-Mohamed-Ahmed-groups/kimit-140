@@ -1,0 +1,16 @@
+-var pageName = "Homepage"
+doctype html
+html(lang="en")
+    head
+        include helpers/headTags
+    body 
+        include layout/nav
+        section.test
+            block test
+                div I am div
+                input#test(type="color" name="")
+            |hello pug
+            //-
+                I am pug comment 
+            // I am HTML comment
+            div #{pageName}
